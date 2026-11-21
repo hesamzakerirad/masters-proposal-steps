@@ -1,0 +1,704 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="راهنمای خلاصه و غیررسمی مراحل پایان‌نامه کارشناسی ارشد غیرپزشکی در سامانه پژوهشیار، دانشگاه آزاد اسلامی مشهد: از ثبت‌نام تا فارغ‌التحصیلی.">
+<meta name="theme-color" content="#f5f6f8" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#0e1116" media="(prefers-color-scheme: dark)">
+<meta property="og:title" content="مسیر پایان‌نامه ارشد">
+<meta property="og:description" content="۳۵ قدم، از ثبت‌نام در پژوهشیار تا فارغ‌التحصیلی، با فرم‌ها و پشتیبان هر مرحله.">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="fa_IR">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%232442c4'/%3E%3Cpath d='M9 16.5l4.5 4.5L23 11.5' fill='none' stroke='white' stroke-width='3.2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E">
+<title>مسیر پایان‌نامه ارشد</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Estedad:wght@300;400;500;700;800&display=swap" rel="stylesheet">
+<style>
+:root {
+  --paper: #f6f7f9; --surface: #ffffff; --ink: #151a23; --muted: #5d6573; --line: #e3e6ec;
+  --you: #2547d0; --you-bg: #eaeefc;
+  --wait: #9a5b00; --wait-bg: #fff3d9; --wait-line: #f1d494;
+  --opt: #6b3fbf; --opt-bg: #f0eafb;
+  --done: #15803d; --done-bg: #e4f5ea;
+  --warn: #b3261e; --warn-bg: #fdeeec;
+  --font: "Estedad", "DejaVu Sans", Tahoma, sans-serif;
+  --r: 16px; --shadow: 0 1px 2px rgba(20,26,35,.05), 0 6px 20px -8px rgba(20,26,35,.10);
+  color-scheme: light;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --paper: #0e1116; --surface: #161b23; --ink: #eceff4; --muted: #9ba3b0; --line: #262d39;
+    --you: #8fa3ff; --you-bg: #1b2342; --wait: #f2b45a; --wait-bg: #2e2410; --wait-line: #55411a;
+    --opt: #bda3f5; --opt-bg: #2a2144; --done: #5fd08a; --done-bg: #12301f; --warn: #ff9a93; --warn-bg: #3a1816;
+    --shadow: none; color-scheme: dark;
+  }
+}
+:root[data-theme="dark"] {
+  --paper: #0e1116; --surface: #161b23; --ink: #eceff4; --muted: #9ba3b0; --line: #262d39;
+  --you: #8fa3ff; --you-bg: #1b2342; --wait: #f2b45a; --wait-bg: #2e2410; --wait-line: #55411a;
+  --opt: #bda3f5; --opt-bg: #2a2144; --done: #5fd08a; --done-bg: #12301f; --warn: #ff9a93; --warn-bg: #3a1816;
+  --shadow: none; color-scheme: dark;
+}
+* { box-sizing: border-box; }
+html, body { margin: 0; }
+html { scroll-behavior: smooth; }
+body { background: var(--paper); color: var(--ink); font-family: var(--font); font-size: 17px; line-height: 1.9; -webkit-font-smoothing: antialiased; }
+a { color: inherit; }
+:focus-visible { outline: 2px solid var(--you); outline-offset: 3px; border-radius: 6px; }
+.wrap { max-width: 760px; margin: 0 auto; padding: 64px 20px 96px; }
+
+/* intro */
+.eyebrow { font-size: 14px; color: var(--muted); }
+h1 { font-size: clamp(30px, 6vw, 46px); font-weight: 800; line-height: 1.3; margin: 10px 0 14px; text-wrap: balance; letter-spacing: -.01em; }
+.lede { color: var(--muted); max-width: 56ch; margin: 0; font-size: 18px; }
+.note { margin: 14px 0 0; padding: 14px 18px; border-radius: 12px; background: var(--wait-bg); color: var(--ink); font-size: 15.5px; line-height: 1.85; }
+.note::before { content: "نکته: "; font-weight: 800; color: var(--wait); }
+.note.warn { background: var(--warn-bg); margin-top: 28px; }
+.note.warn::before { content: none; }
+.note.warn b { color: var(--warn); }
+.note a { color: var(--you); font-weight: 700; text-underline-offset: 3px; }
+.legend { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 22px; }
+.lgi { display: inline-flex; align-items: center; gap: 8px; padding: 4px 14px 4px 12px; border-radius: 999px; font-size: 14px; line-height: 1.8; }
+.lgi i { width: 10px; height: 10px; border-radius: 50%; display: block; }
+.lgi.you { background: var(--you-bg); } .lgi.you i { background: var(--you); }
+.lgi.wait { background: var(--wait-bg); } .lgi.wait i { background: var(--wait); }
+.lgi.opt { background: var(--opt-bg); } .lgi.opt i { background: var(--opt); }
+.lgi.done { background: var(--done-bg); } .lgi.done i { background: var(--done); }
+
+/* sticky progress + stage nav */
+.progress { position: sticky; top: 0; z-index: 5; margin: 36px -20px 0; padding: 12px 20px 10px; background: color-mix(in srgb, var(--paper) 90%, transparent); backdrop-filter: blur(10px); border-bottom: 1px solid var(--line); }
+.p-row { display: flex; justify-content: space-between; align-items: center; gap: 12px; font-size: 14.5px; }
+.p-row b { font-weight: 800; font-variant-numeric: tabular-nums; }
+.reset { font: inherit; font-size: 13px; color: var(--muted); background: none; border: 0; padding: 4px 0; cursor: pointer; text-decoration: underline; text-underline-offset: 3px; }
+.nav { display: flex; gap: 8px; margin-top: 10px; overflow-x: auto; scrollbar-width: none; padding-bottom: 2px; }
+.nav::-webkit-scrollbar { display: none; }
+.nav-i { flex: 1 0 auto; min-width: 92px; text-decoration: none; display: grid; grid-template-columns: auto 1fr; align-items: center; column-gap: 8px; row-gap: 5px; padding: 8px 12px 7px; border-radius: 12px; background: var(--surface); border: 1px solid var(--line); font-size: 13.5px; line-height: 1.4; transition: border-color .15s; }
+.nav-i:hover { border-color: var(--you); }
+.nav-n { width: 22px; height: 22px; border-radius: 50%; display: grid; place-items: center; background: var(--you-bg); color: var(--you); font-weight: 800; font-size: 12.5px; }
+.nav-t { white-space: nowrap; font-weight: 500; }
+.nav-bar { grid-column: 1 / -1; height: 3px; background: var(--line); border-radius: 3px; overflow: hidden; }
+.nav-bar i { display: block; height: 100%; width: 0; background: var(--done); transition: width .3s; }
+.nav-i.done { border-color: transparent; background: var(--done-bg); }
+.nav-i.done .nav-n { background: var(--done); color: var(--surface); }
+
+/* phases */
+.phase { margin-top: 104px; scroll-margin-top: 120px; }
+.ph-head { display: grid; grid-template-columns: auto 1fr; gap: 18px; align-items: start; }
+.ph-n { width: 56px; height: 56px; border-radius: 18px; background: var(--you-bg); color: var(--you); display: grid; place-items: center; font-size: 28px; font-weight: 800; }
+h2 { font-size: 26px; font-weight: 800; margin: 2px 0 0; line-height: 1.5; text-wrap: balance; letter-spacing: -.005em; }
+.ph-meta { display: grid; gap: 2px; margin-top: 10px; font-size: 15px; color: var(--muted); }
+.m { display: flex; flex-wrap: wrap; gap: 4px 10px; align-items: baseline; }
+.k { color: var(--ink); font-weight: 700; min-width: 6.5em; }
+.admin { color: var(--you); background: var(--you-bg); text-decoration: none; font-weight: 600; padding: 0 10px; border-radius: 999px; font-size: 14px; }
+.admin:hover { text-decoration: underline; }
+
+/* steps */
+.steps { list-style: none; margin: 32px 0 0; padding: 0; display: grid; gap: 14px; }
+.step { display: grid; grid-template-columns: 28px 1fr; gap: 16px; padding: 22px 22px 24px; background: var(--surface); border: 1px solid var(--line); border-radius: var(--r); box-shadow: var(--shadow); transition: background .2s, border-color .2s; }
+.step.wait { background: transparent; border: 1.5px dashed var(--wait-line); box-shadow: none; }
+.step.opt { box-shadow: none; border-color: var(--line); background: var(--surface); }
+.step.done { background: var(--done-bg); border-color: transparent; box-shadow: none; }
+.mark { padding-top: 4px; display: flex; justify-content: center; }
+.chk { appearance: none; -webkit-appearance: none; width: 28px; height: 28px; margin: 0; border-radius: 9px; border: 2px solid var(--you); background: var(--surface); cursor: pointer; display: grid; place-items: center; transition: background .15s, border-color .15s; }
+.chk::after { content: ""; width: 8px; height: 14px; border: solid var(--surface); border-width: 0 3px 3px 0; transform: rotate(45deg) translate(-1px,-1px); opacity: 0; }
+.chk:checked { background: var(--done); border-color: var(--done); }
+.chk:checked::after { opacity: 1; }
+.step.opt .chk { border-color: var(--opt); border-style: dashed; }
+.step.opt .chk:checked { border-style: solid; border-color: var(--done); }
+.ring { width: 20px; height: 20px; margin-top: 4px; border-radius: 50%; border: 2.5px solid var(--wait-line); }
+.step.opt .ring { border-radius: 8px; border: 2.5px dashed var(--opt); }
+.meta { display: flex; flex-wrap: wrap; align-items: center; gap: 6px 10px; font-size: 14px; color: var(--muted); }
+.num { font-variant-numeric: tabular-nums; font-weight: 700; }
+.num::before { content: "قدم "; font-weight: 400; }
+.who { padding: 0 12px; border-radius: 999px; font-weight: 600; line-height: 1.8; background: var(--you-bg); color: var(--you); }
+.step.wait .who { background: var(--wait-bg); color: var(--wait); }
+.step.wait .who::before { content: "منتظر: "; font-weight: 400; }
+.step.opt .who { background: var(--opt-bg); color: var(--opt); }
+.step.done .who { background: var(--surface); color: var(--done); }
+.stage { color: var(--muted); font-weight: 400; }
+.stage::before { content: "پژوهشیار · "; }
+.st { display: block; font-size: 19px; font-weight: 700; line-height: 1.7; margin-top: 6px; }
+label.st { cursor: pointer; }
+.step.wait .st { color: var(--wait); }
+.step.done .st { color: var(--muted); text-decoration: line-through; text-decoration-color: var(--done); text-decoration-thickness: 1.5px; }
+.body p { margin: 8px 0 0; color: var(--muted); max-width: 62ch; }
+.body ul { margin: 10px 0 0; padding: 0 20px 0 0; color: var(--muted); max-width: 62ch; }
+.body li { margin: 6px 0; }
+.body li::marker { color: var(--you); }
+.files { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 16px; }
+.file { display: inline-flex; align-items: center; gap: 8px; font-size: 14.5px; font-weight: 500; text-decoration: none; padding: 6px 14px; border-radius: 10px; color: var(--you); background: var(--you-bg); transition: filter .15s; }
+.file::before { content: "↓"; font-weight: 800; }
+.file:hover { filter: brightness(.96); }
+.steps + .note { margin-top: 18px; }
+
+/* rules, cases, contacts */
+.block { margin-top: 104px; }
+.block h2 { margin: 0 0 22px; }
+.rules { display: grid; gap: 12px; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); }
+.rule { display: grid; gap: 4px; padding: 18px 20px; background: var(--surface); border: 1px solid var(--line); border-radius: var(--r); font-size: 15.5px; color: var(--muted); line-height: 1.8; }
+.rule b { color: var(--warn); font-size: 17px; font-weight: 800; }
+.case { background: var(--surface); border: 1px solid var(--line); border-radius: var(--r); margin-bottom: 12px; padding: 0 20px; }
+.case[open] { border-color: var(--you); }
+.case summary { cursor: pointer; padding: 18px 0; font-weight: 700; list-style: none; display: flex; justify-content: space-between; align-items: center; gap: 12px; }
+.case summary::-webkit-details-marker { display: none; }
+.case summary::after { content: "+"; color: var(--you); background: var(--you-bg); width: 28px; height: 28px; border-radius: 50%; display: grid; place-items: center; font-size: 20px; line-height: 1; flex: none; }
+.case[open] summary::after { content: "−"; }
+.case > div { padding: 0 0 22px; color: var(--muted); font-size: 16px; }
+.case p { margin: 0 0 8px; }
+.case ol { margin: 0; padding: 0 22px 0 0; list-style-type: persian; }
+.case li { margin: 6px 0; }
+.case li::marker { color: var(--you); font-weight: 700; }
+.case .post { margin-top: 12px; color: var(--ink); }
+.contacts { list-style: none; padding: 0; margin: 0; display: grid; gap: 10px; }
+.contacts li { display: grid; grid-template-columns: 13em 1fr; gap: 16px; align-items: center; padding: 12px 18px; background: var(--surface); border: 1px solid var(--line); border-radius: 12px; font-size: 16px; }
+.contacts span { color: var(--muted); }
+footer { margin-top: 88px; padding-top: 24px; border-top: 1px solid var(--line); font-size: 14px; line-height: 1.9; color: var(--muted); }
+.totop { position: fixed; left: 16px; bottom: 16px; z-index: 6; background: var(--ink); color: var(--paper); text-decoration: none; padding: 8px 16px; border-radius: 999px; font-size: 14px; font-weight: 600; box-shadow: 0 4px 16px rgba(0,0,0,.18); }
+
+@media (max-width: 560px) {
+  body { font-size: 16.5px; }
+  .wrap { padding-top: 40px; }
+  .step { padding: 18px 16px 20px; gap: 14px; }
+  .ph-n { width: 48px; height: 48px; font-size: 24px; border-radius: 14px; }
+  h2 { font-size: 22px; }
+  .k { min-width: 0; }
+  .contacts li { grid-template-columns: 1fr; gap: 2px; }
+}
+
+/* landing */
+.hero { min-height: min(86vh, 780px); min-height: min(86svh, 780px); display: flex; flex-direction: column; justify-content: center; align-items: flex-start; padding: 24px 0 72px; }
+.hero h1 { font-size: clamp(38px, 9vw, 68px); line-height: 1.25; margin: 18px 0 22px; }
+.hero .lede { font-size: clamp(18px, 3.4vw, 21px); max-width: 34ch; line-height: 2; }
+.cta { display: inline-flex; align-items: center; gap: 10px; margin-top: 34px; padding: 14px 28px; border-radius: 999px; background: var(--you); color: var(--surface); font-weight: 700; font-size: 17px; text-decoration: none; transition: transform .15s, filter .15s; }
+.cta::after { content: "↓"; font-weight: 800; }
+.cta:hover { filter: brightness(1.08); transform: translateY(1px); }
+.hero .note { margin-top: 40px; max-width: 60ch; }
+.hero .legend { margin-top: 20px; }
+.progress { margin-top: 0; }
+@media (max-width: 560px) {
+  .hero { min-height: 0; padding: 28px 0 48px; justify-content: flex-start; }
+  .hero h1 { font-size: 36px; margin: 14px 0 18px; }
+  .cta { width: 100%; justify-content: center; padding: 16px 20px; margin-top: 28px; }
+  .hero .note { margin-top: 32px; }
+  .progress { margin-left: -20px; margin-right: -20px; }
+  .p-row { font-size: 14px; }
+  .nav-i { min-width: 0; padding: 8px 10px 7px; }
+  .nav-t { font-size: 13px; }
+  .ph-head { grid-template-columns: 1fr; gap: 14px; }
+  .phase { margin-top: 80px; scroll-margin-top: 130px; }
+  .steps { gap: 12px; }
+  .step { grid-template-columns: 26px 1fr; padding: 16px 14px 18px; gap: 12px; }
+  .chk { width: 26px; height: 26px; }
+  .st { font-size: 18px; }
+  .file { font-size: 14px; }
+  .files { gap: 8px; }
+  .rules { grid-template-columns: 1fr; }
+  .case { padding: 0 16px; }
+  .totop { left: 12px; bottom: 12px; padding: 8px 14px; }
+  .block { margin-top: 80px; }
+}
+.totop { opacity: 0; pointer-events: none; transition: opacity .2s; }
+.totop.show { opacity: 1; pointer-events: auto; }
+@media (max-width: 560px) {
+  .progress { padding: 8px 16px 8px; margin-left: -20px; margin-right: -20px; }
+  .nav { margin-top: 6px; gap: 6px; }
+  .nav-i { padding: 5px 10px; border-radius: 999px; grid-template-columns: auto auto; }
+  .nav-bar { display: none; }
+  .nav-n { width: 20px; height: 20px; font-size: 12px; }
+  .phase { scroll-margin-top: 100px; }
+}
+.sub { font-size: 20px; font-weight: 800; margin: 44px 0 16px; }
+.tels { display: flex; flex-wrap: wrap; gap: 8px; }
+.tels .admin { font-size: 15px; padding: 2px 12px; }
+@media (max-width: 560px) { .contacts li { gap: 6px; } }
+/* landing v2 */
+.hero { min-height: min(100vh, 880px); min-height: min(100svh, 880px); padding: 56px 0 64px; justify-content: center; }
+.hero .eyebrow { font-size: 15px; }
+.hero h1 { font-size: clamp(40px, 9.5vw, 76px); line-height: 1.22; margin: 28px 0 28px; letter-spacing: -.015em; max-width: 14ch; }
+.hero .lede { font-size: clamp(18px, 3.2vw, 22px); max-width: 32ch; line-height: 2.05; }
+.cta-row { display: flex; flex-wrap: wrap; align-items: center; gap: 18px 24px; margin-top: 44px; }
+.cta-row .cta { margin-top: 0; padding: 16px 32px; font-size: 18px; }
+.cta-hint { color: var(--muted); font-size: 15px; }
+.route { list-style: none; margin: 88px 0 0; padding: 0; width: 100%; display: grid; grid-template-columns: repeat(6, 1fr); position: relative; }
+.route::before { content: ""; position: absolute; top: 21px; inset-inline: 8%; height: 2px; background: var(--line); }
+.route a { position: relative; display: grid; justify-items: center; gap: 12px; text-align: center; text-decoration: none; font-size: 14.5px; font-weight: 500; line-height: 1.5; }
+.route i { width: 44px; height: 44px; border-radius: 50%; display: grid; place-items: center; font-style: normal; font-weight: 800; font-size: 17px; color: var(--you); background: var(--surface); border: 2px solid var(--you-bg); box-shadow: 0 0 0 6px var(--paper); transition: background .15s, color .15s, border-color .15s; }
+.route a:hover i { background: var(--you); color: var(--surface); border-color: var(--you); }
+.before { padding: 24px 0 8px; }
+.before .legend { margin-top: 24px; }
+.progress { margin-top: 56px; }
+@media (max-width: 640px) {
+  .hero { min-height: 0; justify-content: flex-start; padding: 40px 0 48px; }
+  .hero h1 { font-size: 42px; margin: 22px 0 22px; max-width: none; }
+  .cta-row { margin-top: 34px; }
+  .cta-row .cta { width: 100%; justify-content: center; }
+  .cta-hint { width: 100%; text-align: center; }
+  .route { margin-top: 56px; grid-template-columns: 1fr; gap: 6px; }
+  .route::before { top: 22px; bottom: 22px; inset-inline: auto; inset-inline-start: 21px; width: 2px; height: auto; }
+  .route a { grid-auto-flow: column; justify-content: start; justify-items: start; align-items: center; gap: 16px; font-size: 16px; padding: 4px 0; }
+  .route i { width: 40px; height: 40px; font-size: 16px; }
+  .progress { margin-top: 40px; }
+}
+@media (prefers-reduced-motion: reduce) { * { transition: none !important; scroll-behavior: auto !important; } }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header class="hero">
+  <div class="eyebrow">راهنمای ساده و غیررسمی · بر اساس صفحات معاونت پژوهش و فناوری دانشگاه آزاد مشهد · ارشد غیرپزشکی</div>
+  <h1>مسیر پایان‌نامه، از ثبت‌نام تا فارغ‌التحصیلی</h1>
+  <p class="lede">همه مراحل کار در سامانه پژوهشیار، به ترتیب. هر کاری را که انجام دادید تیک بزنید. پیشرفت شما فقط در همین مرورگر ذخیره می‌شود.</p>
+  <div class="cta-row">
+    <a class="cta" href="#register">شروع از قدم اول</a>
+    <span class="cta-hint">۶ مرحله و ۳۵ قدم</span>
+  </div>
+  <ol class="route" aria-label="مرحله‌ها">
+    <li><a href="#register"><i>۱</i><span>ثبت‌نام</span></a></li>
+    <li><a href="#topic"><i>۲</i><span>موضوع و استاد</span></a></li>
+    <li><a href="#proposal"><i>۳</i><span>پروپوزال</span></a></li>
+    <li><a href="#research"><i>۴</i><span>پژوهش</span></a></li>
+    <li><a href="#defense"><i>۵</i><span>دفاع</span></a></li>
+    <li><a href="#after"><i>۶</i><span>پس از دفاع</span></a></li>
+  </ol>
+  </header>
+  <section class="before">
+  <p class="note warn" style="margin:24px 0 0"><b>توجه:</b> این راهنما در ۳۰ آبان ۱۴۰۵ نوشته شده و ممکن است بعداً تغییر کند. قبل از هر مرحله، حتماً <a class="admin" href="https://mashhad.iau.ir/vcr/fa/page/309" target="_blank" rel="noopener">سایت رسمی دانشگاه</a> را بررسی کنید و آخرین نسخه فرم‌ها و قوانین را از همان‌جا بگیرید.</p>
+  <div class="legend" aria-label="راهنمای رنگ‌ها">
+    <span class="lgi you"><i></i>کار شماست</span>
+    <span class="lgi wait"><i></i>منتظر دیگران؛ کاری برای شما نیست</span>
+    <span class="lgi opt"><i></i>اختیاری</span>
+    <span class="lgi done"><i></i>انجام شد</span>
+  </div>
+  </section>
+
+  <div class="progress" role="region" aria-label="پیشرفت">
+    <div class="p-row"><span><b id="done">۰</b> از <b>۲۱</b> کار اصلی را انجام داده‌اید</span><button class="reset" id="reset" type="button">پاک کردن همه تیک‌ها</button></div>
+    
+    <nav class="nav" aria-label="مرحله‌ها"><a class="nav-i" href="#register" data-phase="register" data-total="2">
+  <span class="nav-n">۱</span><span class="nav-t">ثبت‌نام</span>
+  <span class="nav-bar"><i></i></span></a><a class="nav-i" href="#topic" data-phase="topic" data-total="3">
+  <span class="nav-n">۲</span><span class="nav-t">موضوع و استاد</span>
+  <span class="nav-bar"><i></i></span></a><a class="nav-i" href="#proposal" data-phase="proposal" data-total="2">
+  <span class="nav-n">۳</span><span class="nav-t">پروپوزال</span>
+  <span class="nav-bar"><i></i></span></a><a class="nav-i" href="#research" data-phase="research" data-total="3">
+  <span class="nav-n">۴</span><span class="nav-t">پژوهش</span>
+  <span class="nav-bar"><i></i></span></a><a class="nav-i" href="#defense" data-phase="defense" data-total="5">
+  <span class="nav-n">۵</span><span class="nav-t">دفاع</span>
+  <span class="nav-bar"><i></i></span></a><a class="nav-i" href="#after" data-phase="after" data-total="6">
+  <span class="nav-n">۶</span><span class="nav-t">پس از دفاع</span>
+  <span class="nav-bar"><i></i></span></a></nav>
+  </div>
+
+  <section class="phase" id="register">
+  <header class="ph-head">
+    <span class="ph-n">۱</span>
+    <div>
+      <h2>ثبت‌نام در پژوهشیار</h2>
+      <div class="ph-meta">
+        <span class="m"><span class="k">زمان</span>قبل از هر کار دیگری. فقط یک بار لازم است</span>
+        <span class="m"><span class="k">سامانه</span>اول از همه</span>
+        <span class="m"><span class="k">پشتیبان ایتا</span><a class="admin" href="https://eitaa.com/sadatp1" target="_blank" rel="noopener" dir="ltr">@sadatp1</a></span>
+      </div>
+    </div>
+  </header>
+  <ol class="steps"><li class="step do a-you" data-id="r1">
+  <div class="mark"><input type="checkbox" class="chk" id="c-r1" data-phase="register" aria-label="در سامانه پژوهشیار حساب بسازید"></div>
+  <div class="body">
+    <div class="meta"><span class="num">۱</span><span class="who">شما</span></div>
+    <label for="c-r1" class="st">در سامانه پژوهشیار حساب بسازید</label>
+    <p>اگر قبلاً در دانشگاه آزاد (در رشته، مقطع یا واحد دیگری) ثبت‌نام کرده‌اید، حساب جدید نسازید. همان حساب قبلی را باز کنید و رشته و مقطع را درست کنید.</p><div class="files"><a class="file" href="https://ris.iau.ac.ir/" target="_blank" rel="noopener">سامانه پژوهشیار</a><a class="file" href="https://mashhad.iau.ir/file/download/page/1669553210-.jpg" target="_blank" rel="noopener">راهنمای ثبت‌نام (تصویر)</a></div>
+  </div>
+</li><li class="step do a-you" data-id="r2">
+  <div class="mark"><input type="checkbox" class="chk" id="c-r2" data-phase="register" aria-label="فرم ثبت‌نام را با دقت پر کنید"></div>
+  <div class="body">
+    <div class="meta"><span class="num">۲</span><span class="who">شما</span></div>
+    <label for="c-r2" class="st">فرم ثبت‌نام را با دقت پر کنید</label>
+    <ul><li>شماره تلفن و ایمیل درست بنویسید. پشتیبان‌ها از همین راه‌ها با شما تماس می‌گیرند.</li><li>کد ملی و شماره دانشجویی را بنویسید. شماره دانشجویی را از سامانه آموزشیار یا کارت دانشجویی بردارید. خیلی‌ها اشتباهاً «شماره شناسایی» را وارد می‌کنند.</li><li>به پرسش «تصویب پروپوزال پیش از اردیبهشت ۹۸» اگر از سال ۹۷ به بعد وارد دانشگاه شده‌اید، جواب «خیر» است.</li><li>نقش: «دانشجوی رشته‌های غیرپزشکی» را انتخاب کنید.</li><li>جایگاه را طبق رشته، گرایش و مقطع خودتان انتخاب کنید.</li></ul>
+  </div>
+</li></ol>
+  
+</section><section class="phase" id="topic">
+  <header class="ph-head">
+    <span class="ph-n">۲</span>
+    <div>
+      <h2>تعیین موضوع و استاد راهنما</h2>
+      <div class="ph-meta">
+        <span class="m"><span class="k">زمان</span>پایان ترم دوم. حضوری با مدیر گروه هماهنگ کنید</span>
+        <span class="m"><span class="k">سامانه</span>فعالیت اول در پژوهشیار (گام‌های ۱ تا ۴)</span>
+        <span class="m"><span class="k">پشتیبان ایتا</span><a class="admin" href="https://eitaa.com/sadatp1" target="_blank" rel="noopener" dir="ltr">@sadatp1</a></span>
+      </div>
+    </div>
+  </header>
+  <ol class="steps"><li class="step do a-you" data-id="t1">
+  <div class="mark"><input type="checkbox" class="chk" id="c-t1" data-phase="topic" aria-label="فرم شماره ۱ را بگیرید و با مدیر گروه صحبت کنید"></div>
+  <div class="body">
+    <div class="meta"><span class="num">۳</span><span class="who">شما</span></div>
+    <label for="c-t1" class="st">فرم شماره ۱ را بگیرید و با مدیر گروه صحبت کنید</label>
+    <p>بخش اول فرم را پر کنید. در آن از یکی از استادانی که گروه تایید کرده، می‌خواهید راهنمای شما باشد.</p><div class="files"><a class="file" href="https://mashhad.iau.ir/file/download/page/1730709902-6728898e3df3f-1.doc" target="_blank" rel="noopener">فرم شماره ۱ (فرم پیشنهادی)</a></div>
+  </div>
+</li><li class="step do a-you" data-id="t2">
+  <div class="mark"><input type="checkbox" class="chk" id="c-t2" data-phase="topic" aria-label="فرم ۱ را با استاد راهنما کامل کنید"></div>
+  <div class="body">
+    <div class="meta"><span class="num">۴</span><span class="who">شما + استاد راهنما</span></div>
+    <label for="c-t2" class="st">فرم ۱ را با استاد راهنما کامل کنید</label>
+    <p>وقتی استاد قبول کرد، عنوان پیشنهادی را با راهنمایی ایشان در فرم بنویسید. اگر لازم بود، یک استاد مشاور هم اضافه کنید.</p>
+  </div>
+</li><li class="step wait a-grp" data-id="t3">
+  <div class="mark"><span class="ring" aria-hidden="true"></span></div>
+  <div class="body">
+    <div class="meta"><span class="num">۵</span><span class="who">شورای گروه</span></div>
+    <span class="st">شورای گروه فرم ۱ را تایید می‌کند</span>
+    <p>شورا بررسی می‌کند که عنوان و رشته استاد با رشته شما جور باشد.</p>
+  </div>
+</li><li class="step opt a-you" data-id="t4">
+  <div class="mark"><span class="ring" aria-hidden="true"></span></div>
+  <div class="body">
+    <div class="meta"><span class="num">۶</span><span class="who">شما · توصیه‌شده</span></div>
+    <span class="st">در ایرانداک بررسی کنید عنوانتان تکراری نباشد</span>
+    <p>بهتر است قبل از نوشتن پروپوزال این کار را انجام دهید. برگه این استعلام را استاد راهنما امضا می‌کند و بعداً به پروپوزال پیوست می‌شود.</p><div class="files"><a class="file" href="https://www.irandoc.ac.ir" target="_blank" rel="noopener">سامانه ایرانداک</a><a class="file" href="https://mashhad.iau.ir/file/download/page/1670818218-.pdf" target="_blank" rel="noopener">راهنمای استعلام ایرانداک</a></div>
+  </div>
+</li><li class="step do a-you" data-id="t5">
+  <div class="mark"><input type="checkbox" class="chk" id="c-t5" data-phase="topic" aria-label="عنوان و استاد را در پژوهشیار ثبت کنید"></div>
+  <div class="body">
+    <div class="meta"><span class="num">۷</span><span class="who">شما</span><span class="stage">گام ۱</span></div>
+    <label for="c-t5" class="st">عنوان و استاد را در پژوهشیار ثبت کنید</label>
+    <p>همان چیزی را بنویسید که در فرم ۱ تاییدشده آمده: عنوان و نام استاد راهنما و مشاور.</p>
+  </div>
+</li><li class="step wait a-adv" data-id="t6">
+  <div class="mark"><span class="ring" aria-hidden="true"></span></div>
+  <div class="body">
+    <div class="meta"><span class="num">۸</span><span class="who">استاد راهنما و مشاور</span><span class="stage">گام ۲</span></div>
+    <span class="st">استاد راهنما و مشاور عنوان و همکاری را تایید می‌کنند</span>
+    
+  </div>
+</li><li class="step wait a-grp" data-id="t7">
+  <div class="mark"><span class="ring" aria-hidden="true"></span></div>
+  <div class="body">
+    <div class="meta"><span class="num">۹</span><span class="who">مدیر گروه</span><span class="stage">گام ۳</span></div>
+    <span class="st">مدیر گروه تایید می‌کند</span>
+    <p>مدیر گروه عنوان را با فرم ۱ و مصوبه شورا تطبیق می‌دهد. رشته، شماره دانشجویی و سال ورود شما هم بررسی می‌شود.</p>
+  </div>
+</li><li class="step wait a-off" data-id="t8">
+  <div class="mark"><span class="ring" aria-hidden="true"></span></div>
+  <div class="body">
+    <div class="meta"><span class="num">۱۰</span><span class="who">دانشگاه</span><span class="stage">گام ۴</span></div>
+    <span class="st">تایید نهایی دانشگاه؛ ثبت پروپوزال باز می‌شود</span>
+    <p>بعد از این چهار گام، فعالیت دوم (ثبت پروپوزال) برای شما فعال می‌شود.</p>
+  </div>
+</li></ol>
+  <p class="note">اگر پروپوزال شما قبل از اردیبهشت ۹۸ تصویب شده، به این مرحله نیازی ندارید. مستقیم سراغ ثبت پروپوزال بروید.</p>
+</section><section class="phase" id="proposal">
+  <header class="ph-head">
+    <span class="ph-n">۳</span>
+    <div>
+      <h2>ثبت و تصویب پروپوزال</h2>
+      <div class="ph-meta">
+        <span class="m"><span class="k">زمان</span>بلافاصله بعد از گام ۴</span>
+        <span class="m"><span class="k">سامانه</span>مرحله‌های ۱ تا ۶ پژوهشیار</span>
+        <span class="m"><span class="k">پشتیبان ایتا</span><a class="admin" href="https://eitaa.com/sadatp1" target="_blank" rel="noopener" dir="ltr">@sadatp1</a><a class="admin" href="https://eitaa.com/e_fard" target="_blank" rel="noopener" dir="ltr">@e_fard</a></span>
+      </div>
+    </div>
+  </header>
+  <ol class="steps"><li class="step do a-you" data-id="p1">
+  <div class="mark"><input type="checkbox" class="chk" id="c-p1" data-phase="proposal" aria-label="پروپوزال را بنویسید و در پژوهشیار ثبت کنید"></div>
+  <div class="body">
+    <div class="meta"><span class="num">۱۱</span><span class="who">شما</span><span class="stage">مرحله ۱</span></div>
+    <label for="c-p1" class="st">پروپوزال را بنویسید و در پژوهشیار ثبت کنید</label>
+    <p>پروپوزال را با راهنمایی استاد راهنما، در Word و طبق بخشنامه ۷۹۲۶۸/۲۵/ص (۱۴۰۲/۱۱/۰۱) بنویسید. همه بخش‌های ستاره‌دار را پر کنید و این فایل‌ها را بارگذاری کنید:</p><ul><li>فایل PDF پروپوزال</li><li>برگه استعلام ایرانداک (پیشینه پژوهش) که استاد راهنما تایید و امضا کرده</li><li>فرم شماره ۲: تعهدنامه نتایج پایان‌نامه</li><li>فرم شماره ۱ (فرم پیشنهادی)</li><li>فرم شماره ۳: فقط اگر در پژوهش شما انسان یا حیوان شرکت می‌کند (در این حالت کد اخلاق هم لازم است)</li></ul><div class="files"><a class="file" href="https://mashhad.iau.ir/file/download/page/1779084398-6a0aac6ed1c33-.docx" target="_blank" rel="noopener">فرم خام پروپوزال</a><a class="file" href="https://mashhad.iau.ir/file/download/page/1779610365-6a12b2fd7a8cf-.pdf" target="_blank" rel="noopener">فرم استعلام پیشینه پژوهش</a><a class="file" href="https://mashhad.iau.ir/file/download/page/1781076738-6a29130217d49-2-.doc" target="_blank" rel="noopener">فرم شماره ۲ (تعهدنامه نتایج)</a><a class="file" href="https://mashhad.iau.ir/file/download/page/1776764866-69e747c296df2-3-.doc" target="_blank" rel="noopener">فرم شماره ۳ (کد اخلاق)</a><a class="file" href="https://mashhad.iau.ir/file/download/page/1670818804-.pdf" target="_blank" rel="noopener">راهنمای ثبت پروپوزال در پژوهشیار</a></div>
+  </div>
+</li><li class="step do a-you" data-id="p2">
+  <div class="mark"><input type="checkbox" class="chk" id="c-p2" data-phase="proposal" aria-label="بررسی شباهت متن پروپوزال (مشابهت‌یابی)"></div>
+  <div class="body">
+    <div class="meta"><span class="num">۱۲</span><span class="who">شما</span><span class="stage">مرحله ۲</span></div>
+    <label for="c-p2" class="st">بررسی شباهت متن پروپوزال (مشابهت‌یابی)</label>
+    <p>درخواست را در پژوهشیار ثبت کنید. دو سامانه (پژوهشیار و نور) متن را بررسی می‌کنند و هر دو باید درصد شباهت را قبول کنند. اگر شباهت از حد مجاز بیشتر بود، پروپوزال را اصلاح کنید و دوباره بفرستید. اگر در حد مجاز بود، مرحله را تایید کنید تا پروپوزال برای استادان برود.</p><div class="files"><a class="file" href="https://mashhad.iau.ir/file/download/page/1669804045-2.pdf.pdf" target="_blank" rel="noopener">راهنمای مشابهت‌یابی پروپوزال</a></div>
+  </div>
+</li><li class="step wait a-adv" data-id="p3">
+  <div class="mark"><span class="ring" aria-hidden="true"></span></div>
+  <div class="body">
+    <div class="meta"><span class="num">۱۳</span><span class="who">استاد راهنما</span><span class="stage">مرحله ۳</span></div>
+    <span class="st">استاد راهنما بررسی و تایید می‌کند</span>
+    <p>اگر اصلاحی لازم باشد، استاد ویرایش را برای شما باز می‌کند. اصلاحات را انجام دهید. اگر شورا پروپوزال را تصویب کند، تاریخ تایید استاد همان تاریخ تصویب پروپوزال شما می‌شود.</p>
+  </div>
+</li><li class="step wait a-grp" data-id="p4">
+  <div class="mark"><span class="ring" aria-hidden="true"></span></div>
+  <div class="body">
+    <div class="meta"><span class="num">۱۴</span><span class="who">شورای تخصصی گروه</span><span class="stage">مرحله ۴</span></div>
+    <span class="st">شورای گروه بررسی می‌کند</span>
+    <ul><li>اگر «تصویب بدون اصلاحات» یا «تصویب با اصلاحات جزیی» شود، به مرحله بعد می‌روید</li><li>اگر «نیاز به ویرایش یا تغییر» اعلام شود، به مرحله ۳ برمی‌گردید، اصلاح می‌کنید و دوباره می‌فرستید</li></ul>
+  </div>
+</li><li class="step wait a-off" data-id="p6">
+  <div class="mark"><span class="ring" aria-hidden="true"></span></div>
+  <div class="body">
+    <div class="meta"><span class="num">۱۵</span><span class="who">کارشناس پژوهشی واحد</span><span class="stage">مرحله ۶</span></div>
+    <span class="st">شورای پژوهشی تصویب می‌کند و کد پایان‌نامه صادر می‌شود</span>
+    <p>ابلاغیه تصویب، کد پایان‌نامه و ابلاغیه استادان صادر می‌شود و مرحله ۷ برای شما باز می‌شود. (مرحله ۵ غیرفعال است.)</p>
+  </div>
+</li></ol>
+  <p class="note">تا قبل از صدور کد پایان‌نامه، تغییر عنوان یا استاد با اجازه شورای گروه و شورای پژوهشی ممکن است. بعد از آن به اجازه سازمان مرکزی نیاز دارید.</p>
+</section><section class="phase" id="research">
+  <header class="ph-head">
+    <span class="ph-n">۴</span>
+    <div>
+      <h2>انجام پژوهش و نگارش</h2>
+      <div class="ph-meta">
+        <span class="m"><span class="k">زمان</span>از صدور کد پایان‌نامه؛ دست‌کم ۶ ماه</span>
+        <span class="m"><span class="k">سامانه</span>بیرون از سامانه</span>
+        
+      </div>
+    </div>
+  </header>
+  <ol class="steps"><li class="step do a-you" data-id="w1">
+  <div class="mark"><input type="checkbox" class="chk" id="c-w1" data-phase="research" aria-label="پژوهش را با راهنمایی استاد راهنما انجام دهید"></div>
+  <div class="body">
+    <div class="meta"><span class="num">۱۶</span><span class="who">شما</span></div>
+    <label for="c-w1" class="st">پژوهش را با راهنمایی استاد راهنما انجام دهید</label>
+    
+  </div>
+</li><li class="step do a-you" data-id="w2">
+  <div class="mark"><input type="checkbox" class="chk" id="c-w2" data-phase="research" aria-label="هر سه ماه یک گزارش سه‌ماهه پر کنید"></div>
+  <div class="body">
+    <div class="meta"><span class="num">۱۷</span><span class="who">شما</span></div>
+    <label for="c-w2" class="st">هر سه ماه یک گزارش سه‌ماهه پر کنید</label>
+    <p>فرم را از پژوهشیار دانلود کنید. برای هر سه ماه پژوهش یک فرم پر کنید. این فرم‌ها را در مرحله ۷ بارگذاری می‌کنید.</p>
+  </div>
+</li><li class="step do a-you" data-id="w3">
+  <div class="mark"><input type="checkbox" class="chk" id="c-w3" data-phase="research" aria-label="پایان‌نامه را طبق آیین‌نامه نگارش بنویسید"></div>
+  <div class="body">
+    <div class="meta"><span class="num">۱۸</span><span class="who">شما</span></div>
+    <label for="c-w3" class="st">پایان‌نامه را طبق آیین‌نامه نگارش بنویسید</label>
+    <p>نسخه نهایی را باید استاد راهنما تایید کند.</p><div class="files"><a class="file" href="https://mashhad.iau.ir/file/download/regulation/1666522173-.pdf?language=fa&amp;subdomain=vcr" target="_blank" rel="noopener">راهنمای آیین نگارش پایان‌نامه</a><a class="file" href="https://mashhad.iau.ir/file/download/page/1671605145-.pdf" target="_blank" rel="noopener">بخشنامه نگارش پایان‌نامه</a></div>
+  </div>
+</li><li class="step opt a-you" data-id="w4">
+  <div class="mark"><span class="ring" aria-hidden="true"></span></div>
+  <div class="body">
+    <div class="meta"><span class="num">۱۹</span><span class="who">شما · در صورت نیاز</span></div>
+    <span class="st">اگر لازم است، قبل از شروع کار عملی کد اخلاق بگیرید</span>
+    <p>فقط برای پژوهشی که در آن انسان یا حیوان شرکت دارد. اگر واحد شما کمیته اخلاق ندارد، از کمیته اخلاق یک دانشگاه دیگر درخواست کنید و گواهی را به امور پژوهشی بدهید.</p>
+  </div>
+</li></ol>
+  <p class="note">زودترین زمان درخواست دفاع، ۶ ماه بعد از تصویب پروپوزال است.</p>
+</section><section class="phase" id="defense">
+  <header class="ph-head">
+    <span class="ph-n">۵</span>
+    <div>
+      <h2>درخواست دفاع و برگزاری دفاع</h2>
+      <div class="ph-meta">
+        <span class="m"><span class="k">زمان</span>دست‌کم ۶ ماه بعد از تصویب پروپوزال</span>
+        <span class="m"><span class="k">سامانه</span>مرحله‌های ۷ تا ۱۱ پژوهشیار</span>
+        <span class="m"><span class="k">پشتیبان ایتا</span><a class="admin" href="https://eitaa.com/ebi650" target="_blank" rel="noopener" dir="ltr">@ebi650</a></span>
+      </div>
+    </div>
+  </header>
+  <ol class="steps"><li class="step do a-you" data-id="d1">
+  <div class="mark"><input type="checkbox" class="chk" id="c-d1" data-phase="defense" aria-label="مدارک درخواست دفاع را بارگذاری کنید"></div>
+  <div class="body">
+    <div class="meta"><span class="num">۲۰</span><span class="who">شما</span><span class="stage">مرحله ۷</span></div>
+    <label for="c-d1" class="st">مدارک درخواست دفاع را بارگذاری کنید</label>
+    <ul><li>فایل PDF و Word پایان‌نامه (نسخه کامل) با تایید استاد راهنما</li><li>همه فرم‌های گزارش سه‌ماهه</li><li>فرم درخواست دفاع: از پژوهشیار بگیرید، پر کنید و بارگذاری کنید</li><li>فرم مجوز دفاع: از اداره تحصیلات تکمیلی بگیرید، پر کنید و بارگذاری کنید</li></ul><div class="files"><a class="file" href="https://mashhad.iau.ir/file/download/page/1756185090-68ad42024ccec-7-.pdf" target="_blank" rel="noopener">راهنمای مرحله ۷ پژوهشیار</a></div>
+  </div>
+</li><li class="step do a-you" data-id="d2">
+  <div class="mark"><input type="checkbox" class="chk" id="c-d2" data-phase="defense" aria-label="اصل فرم‌ها را به امور دفاع ببرید"></div>
+  <div class="body">
+    <div class="meta"><span class="num">۲۱</span><span class="who">شما · حضوری</span></div>
+    <label for="c-d2" class="st">اصل فرم‌ها را به امور دفاع ببرید</label>
+    <p>به اداره خدمات پژوهشی بروید (طبقه همکف دانشکده مهندسی). کارشناس مرحله ۷ را تایید می‌کند و «فرم تعیین داور و وقت دفاع» را به شما می‌دهد. این فرم را نگه دارید.</p>
+  </div>
+</li><li class="step do a-you" data-id="d3">
+  <div class="mark"><input type="checkbox" class="chk" id="c-d3" data-phase="defense" aria-label="شباهت متن پایان‌نامه را بررسی کنید"></div>
+  <div class="body">
+    <div class="meta"><span class="num">۲۲</span><span class="who">شما</span><span class="stage">مرحله ۸</span></div>
+    <label for="c-d3" class="st">شباهت متن پایان‌نامه را بررسی کنید (مشابهت‌یابی)</label>
+    <ul><li>روی بخش مشابهت‌یابی پایان‌نامه کلیک کنید</li><li>در «خدمات پرداخت»، هزینه «سرویس مشابهت‌یابی» را پرداخت کنید</li><li>دوباره وارد صفحه کاربری خود شوید</li><li>فایل Word پایان‌نامه را بارگذاری کنید و «ذخیره» را بزنید</li><li>«درخواست مشابهت‌یابی» را بزنید. وضعیت می‌شود «در حال بررسی»</li><li>نتیجه ۱ تا ۳ روز کاری طول می‌کشد. اگر نتیجه خوب بود، مرحله ۸ را تایید کنید</li></ul>
+  </div>
+</li><li class="step wait a-adv" data-id="d4">
+  <div class="mark"><span class="ring" aria-hidden="true"></span></div>
+  <div class="body">
+    <div class="meta"><span class="num">۲۳</span><span class="who">استاد راهنما</span><span class="stage">مرحله ۹</span></div>
+    <span class="st">استاد راهنما تایید می‌کند</span>
+    
+  </div>
+</li><li class="step do a-you" data-id="d5">
+  <div class="mark"><input type="checkbox" class="chk" id="c-d5" data-phase="defense" aria-label="فرم تعیین داور و وقت دفاع را پیش مدیر گروه ببرید"></div>
+  <div class="body">
+    <div class="meta"><span class="num">۲۴</span><span class="who">شما · حضوری</span></div>
+    <label for="c-d5" class="st">فرم تعیین داور و وقت دفاع را پیش مدیر گروه ببرید</label>
+    <p>بعد از اینکه مرحله‌های ۸ و ۹ تمام شد.</p>
+  </div>
+</li><li class="step wait a-grp" data-id="d6">
+  <div class="mark"><span class="ring" aria-hidden="true"></span></div>
+  <div class="body">
+    <div class="meta"><span class="num">۲۵</span><span class="who">مدیر گروه</span><span class="stage">مرحله ۱۰</span></div>
+    <span class="st">مدیر گروه داوران و تاریخ دفاع را مشخص می‌کند</span>
+    <p>مدیر گروه درخواست و پایان‌نامه را بررسی می‌کند و داوران و تاریخ پیشنهادی را در صورتجلسه می‌نویسد. تاریخ دفاع باید دست‌کم ۱۰ روز بعد از ارسال پایان‌نامه به داوران باشد.</p>
+  </div>
+</li><li class="step wait a-off" data-id="d7">
+  <div class="mark"><span class="ring" aria-hidden="true"></span></div>
+  <div class="body">
+    <div class="meta"><span class="num">۲۶</span><span class="who">کارشناس پژوهشی دانشکده</span><span class="stage">مرحله ۱۱</span></div>
+    <span class="st">پایان‌نامه برای داوران فرستاده می‌شود و ابلاغیه‌ها صادر می‌شود</span>
+    <p>آخرین نسخه‌ای که شباهت متنش بررسی شده برای داوران فرستاده می‌شود. ابلاغیه‌ها، دعوت‌نامه‌ها و صورتجلسه دفاع هم صادر می‌شود.</p>
+  </div>
+</li><li class="step do a-you" data-id="d8">
+  <div class="mark"><input type="checkbox" class="chk" id="c-d8" data-phase="defense" aria-label="جلسه دفاع"></div>
+  <div class="body">
+    <div class="meta"><span class="num">۲۷</span><span class="who">شما</span><span class="stage">مرحله ۱۱</span></div>
+    <label for="c-d8" class="st">جلسه دفاع</label>
+    <ul><li>یک استاد راهنما، یک داور و ناظر حتماً باید حاضر باشند. بدون آنها جلسه برگزار نمی‌شود.</li><li>نمره از ۲۰ است: ۱۹ نمره از داوران و ۱ نمره از مدیریت پژوهش (فرم ۸).</li><li>اگر دفاع موفق باشد، صورتجلسه در سامانه بارگذاری می‌شود و نظر هر داور در فرم ۶ ثبت می‌شود.</li><li>اگر دفاع موفق نباشد، با نظر داوران به مرحله ۷ برمی‌گردید.</li></ul>
+  </div>
+</li></ol>
+  
+</section><section class="phase" id="after">
+  <header class="ph-head">
+    <span class="ph-n">۶</span>
+    <div>
+      <h2>امور پس از دفاع و فارغ‌التحصیلی</h2>
+      <div class="ph-meta">
+        <span class="m"><span class="k">زمان</span>بعد از دفاع موفق</span>
+        <span class="m"><span class="k">سامانه</span>مرحله ۱۲ پژوهشیار</span>
+        <span class="m"><span class="k">پشتیبان ایتا</span><a class="admin" href="https://eitaa.com/z_mohali" target="_blank" rel="noopener" dir="ltr">@z_mohali</a></span>
+      </div>
+    </div>
+  </header>
+  <ol class="steps"><li class="step do a-you" data-id="a1">
+  <div class="mark"><input type="checkbox" class="chk" id="c-a1" data-phase="after" aria-label="اصلاحات داوران را با راهنمایی استاد راهنما انجام دهید"></div>
+  <div class="body">
+    <div class="meta"><span class="num">۲۸</span><span class="who">شما</span></div>
+    <label for="c-a1" class="st">اصلاحات داوران را با راهنمایی استاد راهنما انجام دهید</label>
+    
+  </div>
+</li><li class="step do a-you" data-id="a2">
+  <div class="mark"><input type="checkbox" class="chk" id="c-a2" data-phase="after" aria-label="امضاهای نهایی صورتجلسه دفاع را بگیرید"></div>
+  <div class="body">
+    <div class="meta"><span class="num">۲۹</span><span class="who">شما · حضوری</span></div>
+    <label for="c-a2" class="st">امضاهای نهایی صورتجلسه دفاع را بگیرید</label>
+    <p>امضای مدیر گروه و مدیر پژوهش دانشکده لازم است. اگر نمره شما به انجام اصلاحات مشروط شده، تایید کتبی و امضای استاد راهنما را هم زیر صورتجلسه بگیرید.</p>
+  </div>
+</li><li class="step do a-you" data-id="a3">
+  <div class="mark"><input type="checkbox" class="chk" id="c-a3" data-phase="after" aria-label="نسخه نهایی را در مرحله ۱۲ بارگذاری کنید"></div>
+  <div class="body">
+    <div class="meta"><span class="num">۳۰</span><span class="who">شما</span><span class="stage">مرحله ۱۲</span></div>
+    <label for="c-a3" class="st">نسخه نهایی را در مرحله ۱۲ بارگذاری کنید</label>
+    
+  </div>
+</li><li class="step opt a-you" data-id="a4">
+  <div class="mark"><span class="ring" aria-hidden="true"></span></div>
+  <div class="body">
+    <div class="meta"><span class="num">۳۱</span><span class="who">شما · اختیاری</span></div>
+    <span class="st">نمره تشویقی مقاله (تا ۲ نمره)</span>
+    <p>اگر مقاله‌ای از پایان‌نامه‌تان چاپ یا پذیرفته شده، فرم ۹ و مدارک مقاله را به مدیریت پژوهشی دانشکده بدهید. بعد از تعیین نمره، فرم و مدارک را برای ثبت به اداره خدمات پژوهشی ببرید.</p><div class="files"><a class="file" href="https://mashhad.iau.ir/file/download/page/1758005311-68c9083f14a19-9.doc" target="_blank" rel="noopener">فرم شماره ۹ (نمره مقاله)</a></div>
+  </div>
+</li><li class="step opt a-you" data-id="a5">
+  <div class="mark"><span class="ring" aria-hidden="true"></span></div>
+  <div class="body">
+    <div class="meta"><span class="num">۳۲</span><span class="who">شما · اختیاری</span></div>
+    <span class="st">نمره تشویقی نظام موضوعات پایش آزاد</span>
+    <p>فقط اگر قبلاً «تطابق اولیه» پروپوزال را گرفته‌اید: پرسشنامه برنامه علمی را در مرحله ۱۲ پر کنید. نتیجه بعد از ۲۰ روز کاری می‌آید.</p>
+  </div>
+</li><li class="step do a-you" data-id="a6">
+  <div class="mark"><input type="checkbox" class="chk" id="c-a6" data-phase="after" aria-label="در ایتا به ‎@z_mohali پیام بدهید"></div>
+  <div class="body">
+    <div class="meta"><span class="num">۳۳</span><span class="who">شما</span></div>
+    <label for="c-a6" class="st">در ایتا به ‎@z_mohali پیام بدهید</label>
+    <p>تا نسخه نهایی برای استاد راهنما فرستاده شود و کارتان در سامانه تمام شود.</p>
+  </div>
+</li><li class="step do a-you" data-id="a7">
+  <div class="mark"><input type="checkbox" class="chk" id="c-a7" data-phase="after" aria-label="فرم مراحل فارغ‌التحصیلی را از گروه آموزشی بگیرید"></div>
+  <div class="body">
+    <div class="meta"><span class="num">۳۴</span><span class="who">شما · حضوری</span></div>
+    <label for="c-a7" class="st">فرم مراحل فارغ‌التحصیلی را از گروه آموزشی بگیرید</label>
+    <p>همراه با ریزنمرات تاییدشده گروه و صورتجلسه کامل‌شده دفاع.</p>
+  </div>
+</li><li class="step do a-you" data-id="a8">
+  <div class="mark"><input type="checkbox" class="chk" id="c-a8" data-phase="after" aria-label="به اداره تحصیلات تکمیلی بروید"></div>
+  <div class="body">
+    <div class="meta"><span class="num">۳۵</span><span class="who">شما · حضوری</span></div>
+    <label for="c-a8" class="st">به اداره تحصیلات تکمیلی بروید</label>
+    <p>تا نمره پایان‌نامه ثبت شود و کارهای فارغ‌التحصیلی ادامه پیدا کند.</p><div class="files"><a class="file" href="https://mashhad.iau.ir/file/download/page/1763467469-691c60cd6cce6-1.pdf" target="_blank" rel="noopener">فرم درخواست فارغ‌التحصیلی</a></div>
+  </div>
+</li></ol>
+  
+</section>
+
+  <section class="block" id="rules">
+    <h2>نکته‌هایی که نباید فراموش کنید</h2>
+    <div class="rules"><div class="rule"><b>فایل مشابهت‌یابی</b><span>همیشه Word، با فونت استاندارد (B Nazanin، B Titr) و عدد فارسی. فونت نستعلیق و فونت‌های غیراستاندارد ممنوع است.</span></div><div class="rule"><b>۶ ماه</b><span>حداقل فاصله بین تصویب پروپوزال و درخواست دفاع.</span></div><div class="rule"><b>۱۰ روز</b><span>حداقل فاصله بین ارسال پایان‌نامه به داوران و روز دفاع.</span></div><div class="rule"><b>کد اخلاق</b><span>اگر در پژوهش شما انسان شرکت دارد، کد اخلاق لازم است و باید قبل از کار عملی آن را بگیرید.</span></div><div class="rule"><b>بعد از کد پایان‌نامه</b><span>هر تغییر در عنوان یا استادان به اجازه سازمان مرکزی نیاز دارد.</span></div></div>
+  </section>
+
+  <section class="block" id="cases">
+    <h2>حالت‌های ویژه</h2>
+    <details class="case"><summary>استاد راهنمای بیرون از دانشگاه آزاد (همکار پژوهش) یا مشاور مهارتی</summary><div><p>این حالت فقط وقتی ممکن است که ظرفیت استادان گروه، استادان وابسته و دیگر واحدهای دانشگاه آزاد پر شده باشد. استاد باید دست‌کم استادیار باشد.</p><ol><li>استاد درخواستش را به گروه می‌دهد: نامه، تصویر کارت ملی، آخرین حکم کارگزینی و رزومه</li><li>شورای گروه بررسی می‌کند و صورتجلسه می‌نویسد</li><li>پرونده به اداره امور پژوهشی (امور مجوزها) می‌رود و شورای پژوهشی واحد آن را تصویب می‌کند</li><li>استاد به حراست مراجعه می‌کند و مجوز نهایی را می‌گیرد</li><li>در سامانه ساجد ثبت می‌شود و ظرفیت به او داده می‌شود</li></ol><div class="files"><a class="file" href="https://mashhad.iau.ir/file/download/page/1770121186-6981e7e2c9b94-.docx" target="_blank" rel="noopener">فرم صورتجلسه استاد همکار پژوهش</a><a class="file" href="https://mashhad.iau.ir/file/download/page/1770121217-6981e801112fe-.docx" target="_blank" rel="noopener">فرم صورتجلسه استاد مشاور مهارتی</a></div></div></details><details class="case"><summary>تغییر عنوان پایان‌نامه</summary><div><ol><li>شما درخواست کتبی می‌نویسید و استاد راهنما تایید می‌کند. همراه آن پروپوزال اصلاح‌شده را، با تغییرات هایلایت‌شده، به گروه بدهید</li><li>شورای گروه بررسی می‌کند و تصمیم می‌گیرد اصلاح در همان پرونده کافی است یا باید دوباره از اول ثبت کنید</li><li>مصوبه به اداره خدمات پژوهشی می‌رود و شورای پژوهشی واحد درباره آن تصمیم می‌گیرد</li><li>پرونده به سازمان مرکزی می‌رود تا اجازه ویرایش یا حذف مراحل را بدهد</li></ol></div></details><details class="case"><summary>تغییر استاد راهنما یا مشاور (بعد از تصویب پروپوزال)</summary><div><ol><li>استاد قبلی نامه کتبی می‌دهد و می‌نویسد که همکاری نمی‌کند. همچنین می‌نویسد با ادامه همان عنوان موافق است یا نه</li><li>شورای گروه بررسی می‌کند و استاد جدید را مشخص می‌کند</li><li>شورای پژوهشی واحد اجازه می‌دهد و با سازمان مرکزی مکاتبه می‌شود</li><li>ویرایش در سامانه باز می‌شود تا استاد را عوض کنید</li></ol><p class="post">اگر استاد قبلی با ادامه همان عنوان موافق نباشد، همه مراحل قبلی پاک می‌شود و باید با استاد جدید از اول ثبت کنید.</p></div></details><details class="case"><summary>حضور آنلاین استاد راهنمایی که خارج از کشور زندگی می‌کند، در دفاع</summary><div><ol><li>شما درخواست کتبی می‌نویسید و مدرک حضور استاد در خارج از کشور را پیوست می‌کنید</li><li>مدیر گروه تایید می‌کند</li><li>پرونده به اداره خدمات پژوهشی می‌رود و شورای پژوهشی واحد اجازه می‌دهد</li><li>لینک دفاع آنلاین را برای استاد می‌فرستید</li></ol><p class="post">خودتان باید حضوری و در دانشگاه دفاع کنید.</p></div></details>
+  </section>
+
+  <section class="block" id="contacts">
+    <h2>پشتیبانی در ایتا</h2>
+    <ul class="contacts"><li><a class="admin" href="https://eitaa.com/sadatp1" target="_blank" rel="noopener" dir="ltr">@sadatp1</a><span>ثبت عنوان و سه مرحله اول پروپوزال</span></li><li><a class="admin" href="https://eitaa.com/e_fard" target="_blank" rel="noopener" dir="ltr">@e_fard</a><span>تصویب پروپوزال</span></li><li><a class="admin" href="https://eitaa.com/ebi650" target="_blank" rel="noopener" dir="ltr">@ebi650</a><span>درخواست دفاع و برگزاری دفاع (مراحل ۷ تا ۱۱)</span></li><li><a class="admin" href="https://eitaa.com/z_mohali" target="_blank" rel="noopener" dir="ltr">@z_mohali</a><span>کارهای بعد از دفاع (مرحله ۱۲)</span></li></ul>
+    <h3 class="sub">تماس تلفنی و ایمیل با دانشگاه</h3>
+    <ul class="contacts">
+      <li><span>معاونت پژوهش و فناوری</span><div class="tels"><a class="admin" href="tel:05136630781" dir="ltr">05136630781</a><a class="admin" href="tel:05136620154" dir="ltr">05136620154</a></div></li>
+      <li><span>دفتر معاونت پژوهش و فناوری</span><div class="tels"><a class="admin" href="tel:05136204001" dir="ltr">05136204001</a></div></li>
+      <li><span>مرکز تلفن معاونت پژوهش و فناوری</span><div class="tels"><a class="admin" href="tel:05136229760" dir="ltr">05136229760</a></div></li>
+      <li><span>اداره تحصیلات تکمیلی</span><div class="tels"><a class="admin" href="tel:05136620910" dir="ltr">05136620910</a></div></li>
+      <li><span>اداره فارغ‌التحصیلان</span><div class="tels"><a class="admin" href="tel:05136611603" dir="ltr">05136611603</a></div></li>
+      <li><span>ایمیل معاونت پژوهش</span><div class="tels"><a class="admin" href="mailto:research@mshdiau.ac.ir" dir="ltr">research@mshdiau.ac.ir</a></div></li>
+    </ul>
+    <p class="note" style="margin-top:16px">ساعت کاری: ۷:۴۰ تا ۱۴:۳۰. نشانی: مشهد، قاسم‌آباد (شهرک غرب)، بلوار شهید طهرانچی، پردیس شهید سلیمانی دانشگاه آزاد اسلامی مشهد. شماره‌ها از صفحه «تماس با ما» و «راهنمای جامع تلفن‌های دانشگاه» در سایت رسمی گرفته شده‌اند و ممکن است عوض شوند.</p>
+  </section>
+
+  <footer>منبع: <a href="https://mashhad.iau.ir/vcr/fa/page/309" target="_blank" rel="noopener">صفحات راهنمای کارشناسی ارشد، معاونت پژوهش و فناوری واحد مشهد</a> (خوانده‌شده در ۳۰ آبان ۱۴۰۵). این صفحه رسمی نیست و ممکن است قدیمی شود. قبل از هر مرحله، قوانین و آخرین نسخه فرم‌ها را در سایت رسمی دانشگاه بررسی کنید.</footer>
+</div>
+<a class="totop" href="#" aria-label="رفتن به بالای صفحه">↑ بالا</a>
+<script>
+(function() {
+  var KEY = "iau-thesis-flow-v1";
+  var FA = "۰۱۲۳۴۵۶۷۸۹";
+  function fa(n) { return String(n).replace(/[0-9]/g, function(d) { return FA[d]; }); }
+  var state = {};
+  try { state = JSON.parse(localStorage.getItem(KEY) || "{}"); } catch (err) { state = {}; }
+  var boxes = Array.prototype.slice.call(document.querySelectorAll(".chk"));
+  function save() { try { localStorage.setItem(KEY, JSON.stringify(state)); } catch (err) {} }
+  function render() {
+    var main = 0, per = {};
+    boxes.forEach(function(b) {
+      var li = b.closest(".step");
+      li.classList.toggle("done", b.checked);
+      if (b.checked && !li.classList.contains("opt")) {
+        main++; per[b.dataset.phase] = (per[b.dataset.phase] || 0) + 1;
+      }
+    });
+    document.getElementById("done").textContent = fa(main);
+    document.querySelectorAll(".nav-i").forEach(function(n) {
+      var t = +n.dataset.total, d = per[n.dataset.phase] || 0;
+      var pct = t ? Math.round(d / t * 100) : 0;
+      n.querySelector(".nav-bar i").style.width = pct + "%";
+      n.classList.toggle("done", t > 0 && d >= t);
+    });
+  }
+  boxes.forEach(function(b) {
+    b.checked = !!state[b.id];
+    b.addEventListener("change", function() { state[b.id] = b.checked; save(); render(); });
+  });
+  document.getElementById("reset").addEventListener("click", function() {
+    boxes.forEach(function(b) { b.checked = false; }); state = {}; save(); render();
+  });
+  render();
+  document.addEventListener('click', function(e) {
+    var a = e.target.closest && e.target.closest('a[href^="#"]');
+    if (!a) return;
+    var id = a.getAttribute('href').slice(1);
+    var el = id ? document.getElementById(id) : document.body;
+    if (!el) return;
+    e.preventDefault();
+    var calm = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    el.scrollIntoView({ behavior: calm ? 'auto' : 'smooth', block: 'start' });
+    try { if (id) history.replaceState(null, '', '#' + id); } catch (err) {}
+  });
+  var top = document.querySelector('.totop');
+  function tt() { top.classList.toggle('show', window.scrollY > 600); }
+  window.addEventListener('scroll', tt, {passive: true}); tt();
+})();
+</script>
+</body>
+</html>
